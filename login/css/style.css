@@ -1,0 +1,76 @@
+body, html{
+    background-color: rgb(163, 163, 163);
+    font-family: arial;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#wrapper-login{
+    text-align: center;
+    padding-top: 25px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+input[type="text"]{
+    text-align: left;
+    padding: 10px;
+    margin: 3px;
+    background-color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input[type="text"]:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+input[type="text"]::placeholder{
+    color: grey;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(45, 45, 45);
+}
+
+#wrapper-signup{
+    text-align: center;
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 50px;
+}
+
+.form-error{
+    color: red;
+    text-align: center;
+    font-weight: 900;
+}
+
+.form-success{
+    text-align: center;
+    color: green;
+    font-weight: 900;
+}
+
+#wrapper-logout{
+    text-align: center;
+    padding-top: 50px;
+    width: 250px;
+    margin: 0 auto;
+}

@@ -1,0 +1,174 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=EB+Garamond:wght@500&family=Kablammo&family=Lobster&family=Playfair:ital,wght@0,300;1,300&display=swap');
+
+/* General Styling */
+body {
+  background-color: #333333;
+  font-family: 'EB Garamond', serif;
+  color: #ffffff;
+  margin-top: 4rem;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.navbar {
+  background-color: #333333;
+  border-bottom: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #f3722c;
+}
+
+.dropdown-menu {
+  background-color: #333333;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  background-color: #f3722c;
+  color: #ffffff;
+}
+
+/* Theme Selector */
+#color {
+  display: none;
+}
+
+/* Buttons */
+.time-select {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.time-option {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  color: #ffffff;
+  background-color: #f3722c;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.time-option:hover {
+  background-color: #689f38;
+}
+
+/* Typing Challenge Section */
+#challengeText {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+#userInput {
+  font-size: 1rem;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #333333;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+}
+
+/* Timer */
+#timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/* Start Button */
+#begin {
+  background-color: #f3722c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative; 
+  transition: background-color 0.3s ease;
+}
+
+#begin:hover {
+  background-color: #689f38;
+}
+
+/* Result Section */
+#countdown,
+#timeLeft,
+#answer {
+  font-size: 2rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+#answerWpm {
+  font-size: 2rem;
+}
+
+#restart {
+  background-color: #f3722c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart:hover {
+  background-color: #e44b14;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  animation: fadeIn 1s ease;
+}
+
+#challengeText,
+#timer,
+#userInput,
+#countdown,
+#timeLeft,
+#answer,
+#restart {
+  animation: slideInFromLeft 0.5s ease;
+}
